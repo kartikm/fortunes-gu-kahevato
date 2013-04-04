@@ -2,7 +2,7 @@
 
 binaries = fortune-mod
 fortune-mod = /usr/bin/strfile
-file-exists = $(if $(wildcard $(firstword $($1))),,$(error Please install $1: aptitude instal $1))
+file-exists = $(if $(wildcard $(firstword $($1))),,$(error Please install $1: aptitude install $1))
 quotes-file = kahevato
 
 all: prep clean fortune
