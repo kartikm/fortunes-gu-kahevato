@@ -1,10 +1,35 @@
-fortunes-gu-kahevato
-====================
+Gujarati Fortunes Cookies
+=========================
 
-Gujarati proverbs in fortune cookie format.
+Entire codebase is purly based on Kannada Fortunes Cookies project at,
+<https://github.com/aravindavk/fortunes-kn-gaadegalu>
 
-How to add more proverbs?
--------------------------
+To Create Fortune Database
+--------------------------
+Add one kahevata per line to kahevato.txt and run following command:
 
-1. Add proverb in a file kahevato.txt.
-2. Please keep one proverb in a single line.
+    make
+
+Testing Generated Fortune Database
+----------------------------------
+To test above generated fortune database run following command:
+
+    fortune kahevato
+
+
+Generating PHP file of Quotes
+-----------------------------
+To convert the kahevato as PHP array, run:
+
+    make php
+
+kahevato.php file will be created in the same directory with an array
+$kahevato
+
+Generating JSON file of quotes
+------------------------------
+To convert the kahevato data as JSON, run
+
+    make json
+
+kahevato.json file will be created in the same directory.
